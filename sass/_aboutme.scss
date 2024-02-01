@@ -1,0 +1,12 @@
+$bg-color : #101025;
+$f-color :  #FFF;
+#aboutme{
+    .title{
+        button{
+            display: flex;
+            background-color: $bg-color;
+            flex-direction: column;
+            margin-left: 65%;
+        }
+    }
+}

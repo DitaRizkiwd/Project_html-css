@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+button{
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    background-color:#5655da ;
+}
+aside{
+    background-color: #5655da;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    flex: 1;
+    position: sticky;
+    top: 0px;
+    padding: 46px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+main{
+    flex: 2.8;
+    padding : 0 70px;
+}
+main >section{
+    padding : 60px 0;
+}
+section h1{
+    color: #f74470;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.profile{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.profile > .detail{
+    /* padding: 0 50px; */
+    align-items: center;
+    justify-content: center;
+}
+.profile > img {
+    margin-top: 50%;
+    border-radius: 50%;
+    /* width: 165px;
+    height: 165px; */
+}
+
+.sosmed{
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    margin-left: -30px;
+
+}
+.item{
+    text-decoration: none;
+    color: #FFF;
+    padding-bottom: 10px;
+}
+.name{
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFF;
+    margin: 0 0 5px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.job{
+    color: #d8d8e9;
+}
+.tabitem{
+    background-color: transparent;
+    color: #9e9e9e;
+    cursor: pointer;
+}
+.tabitem:hover{
+    color: #1a1a1a;
+}
+.tabitem::first-letter{
+    font-weight: 700;
+}
+.active{
+    color: #1a1a1a;
+}
+.contact{
+    margin-bottom: 250px;
+}
+/* input[type="text"] {
+    background-color: gray;
+} */
+.skill .name{
+    font-size: 14px;
+    color: #1a1a1a;
+    margin: 0;
+    /* font-weight:normal; */
+}
+
+body{
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+nav{
+    display: flex;
+    flex :6;
+    flex-direction: column;
+    /* position: absolute; */
+    /* margin-top: 20%;
+    margin-left: ; */
+    /* margin-top: -px; */
+    /* padding-left: 20%; */
+    padding-bottom: 50%;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+}
+#aboutme .deskripsi{
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+#aboutme .title button{
+    display: flex;
+    background-color: #5655da;
+    flex-direction: column;
+    margin-left: 65%;
+}
+
+#aboutme .skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.skill .skill-detail{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    text-align: right;
+    grid-template-areas: 
+    "name persentase"
+    "pbar pbar"
+   ;
+}
+.skill-detail .name{
+    text-align: left;
+    grid-area: name;
+}
+.skill-detail .persentase{
+    text-align: right;
+    grid-area: persentase;
+}
+
+.skill-detail .graph{
+    grid-area: pbar;
+    background-color:#9e9e9e;
+    height: 10px;
+    border-radius: 5px 5px;
+}
+.graph .progres{
+    background-color: aqua;
+    height: 100%;
+}
+
+.w90{
+    width: 90%;
+}
+.w45{
+    width: 45%;
+}
+.w80{
+    width: 80%;
+}
+.w60{
+    width: 60%;
+}
+
+#contact .input-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-areas: 
+    "name email"
+    "phone subject"
+    "message message"
+    ;
+    gap: 30px;
+}
+.input-form input, .input-form textarea{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.input-form input:focus, .input-form textarea:focus{
+    outline: none;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+.input-form textarea{
+    grid-area: message;
+    resize: none;
+}
+
+#contact button{
+    margin-top: 15px;
+    padding: 5px 10px;
+    color: #FFF;
+    background-color:#5655da ;
+    border-radius: 2px;
+}
+
+.sosmed svg {
+    width: 30px;
+    height: 30px;
+}
+.info{
+    padding: 10px 0;
+}
+.info p{
+    padding: 5px 0;
+    font-size: 14px;
+}
+@media screen and (max-width:768px) {
+    main{
+        padding:0 35px;
+    }
+    aside{
+        padding: 23px;
+    }
+}
+@media screen and (max-width:640px) {
+    aside{
+        display: none;
+    }
+}
+
+/* .education-list:nth-child(3){
+    position: sticky;
+    top: 20px;
+    background-color: #1a1a1a;
+} */
+/* img + .name{
+    background-color: #9e9e9e;
+/* } contoh sibling */

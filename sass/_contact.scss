@@ -1,0 +1,18 @@
+
+@mixin textinput(){
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+#contact{
+    .input-form{
+        input{
+            @include textinput();
+        }
+        textarea{
+            @include textinput();
+        }
+    }
+}
